@@ -1,0 +1,248 @@
+body{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 100%;
+    width: 1144px;
+    gap: 327px;
+}
+.container .cartoes{
+    background-image: url('../img/bg-main-desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--White);
+    position: relative;
+}
+
+
+.container .cartoes .cartaofrente{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 30px;
+    border-radius: 10px;
+    background-image: url('../img/bg-card-front.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 451px;
+    height: 247px;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    z-index: 1;
+}
+.container .cartoes .cartaofrente .numerocartao{
+     font-size: 1.6rem;
+     font-family: "Space Grotesk", sans-serif;
+     font-weight: 700;
+     text-align: justify;
+     letter-spacing: 1px;
+}
+
+.container .cartoes .cartaofrente .informacoes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+    
+    
+}
+.container .cartoes .cartaofrente .informacoes .nomecartao,
+.container .cartoes .cartaofrente .informacoes .datacartao{
+    font-size: 1.0rem;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+.container .cartaoverso{
+    position: absolute;
+    width: 451px;
+    height: 247px;
+    background-image: url('../img/bg-card-back.png');
+    background-repeat: no-repeat;
+    top: 45%;
+    left: 40%;
+
+}
+
+.container .cartaoverso .codigoseguranca{
+    color: var(--White);
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: "Space Grotesk", sans-serif;
+    float: right;
+    margin: 110px 60px;
+} 
+
+.container .formulario{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   height: 100%;
+   
+}
+
+.container .formulario .dadoscartao{
+   
+    width: 410px;
+    padding: 10px 0px;
+}
+
+.labelformatada{
+    font-size: 0.7rem;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    text-align: justify;
+    letter-spacing: 0.8px;
+    color: var(--Very-dark-violet);
+    width: 80%;
+    display: inline-block;
+    
+}
+
+
+
+.inputs.campocvc{
+    width: 40%;
+    float: right;
+
+}
+
+.inputs{
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--Light-grayish-violet);
+    border-radius: 8px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: var(--Very-dark-violet);
+   
+}
+
+.inputs::placeholder{
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    color: var(--Light-grayish-violet);
+    font-size: 1.0rem;
+    
+}
+
+.inputs.campomes,.inputs.campoano{
+    width: 80px;
+    margin-right: 10px;
+}
+
+.inputs:focus{
+    outline: none;
+    border: 1px solid var(--to);
+}
+
+span{
+    color: var(--Red);
+    font-size: 0.7rem;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    text-align: justify;
+    letter-spacing: 0.8px;
+    margin-bottom: 20px;
+    display: inline-block;
+    margin-right: 110px;
+    display: none;
+   
+}
+
+.erro{
+    color: var(--Red);
+    font-size: 0.7rem;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    text-align: justify;
+    letter-spacing: 0.8px;
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-right: 50px; 
+    
+   
+}
+
+
+.errodata{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+.botao{
+   width: 410px;
+   height: 50px;
+   border-radius: 10px;
+   color: var(--White);
+   background-color: var(--Very-dark-violet);
+   margin-top:30px;
+}
+
+
+.mensagemconfirmacao{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mensagemconfirmacao h1{
+    font-size: 1.6rem;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+    color: var(--Very-dark-violet);
+    margin-bottom: 30px;
+
+}
+
+.imglogo{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.mensagemconfirmacao p{
+    font-size: 1.0rem;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+    color: var(--Dark-grayish-violet);
+    margin-bottom: 20px;
+}
+
+.hidden{
+    display: none;
+}
+.teste{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.teste .cvc{
+    float : right;
+    margin-left: 80px;
+}

@@ -1,0 +1,43 @@
+@media(width < 980px)
+{
+    body{
+        align-items: flex-start;
+    }
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: .7fr 1fr;
+        gap: 100px;        
+        
+  }
+    .container .cartoes{
+        background-image: url('../img/bg-main-mobile.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .container .cartoes .cartaofrente{
+        width: 320px;
+        height: 200px;
+        top: 60%;
+        left: 10%;
+       
+    }
+
+    .container .cartaoverso{
+        
+        width: 320px;
+        height: 200px;
+        top: 10%;
+        left: 18%;
+        border-radius: 10px;
+    }
+    
+    .container .formulario {
+        
+        justify-content: start;
+        
+    }
+    .container .formulario .dadoscartao, .container .formulario .botao{
+        width: 320px;
+    }
+    
+}
