@@ -106,6 +106,7 @@ body{
     color: var(--Very-dark-violet);
     width: 80%;
     display: inline-block;
+    margin-bottom: 10px;
     
 }
 

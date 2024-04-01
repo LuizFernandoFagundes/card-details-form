@@ -142,10 +142,7 @@ function limpaCampos()
     
     codigoSeguranca.innerHTML="000";
     campocvc.value="";
-    
-    // inputs.forEach((input) => {
-    //     input.value="";
-    // }); 
+       
 }
 
 
